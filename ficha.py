@@ -24,4 +24,30 @@ def ficha():
     #   - Código secreto: nombre invertido en mayúsculas
     #   - Las 3 notas, su suma, promedio y promedio entero
     #   - Cierre decorativo usando repetición de string ("=" * 24)
+   
+    print("========================")
+    print(" "+ " "+ " ","ficha del alumno".upper())
+    print("========================")
+    Nombre = input("Nombre:").strip()
+    Email = input("Email:")
+    Notas = [(str(input("Nota 1:"))),(str(input("Nota 2:"))),(str(input("Nota 3:")))] 
+    print("Nombre:",Nombre.title())
+    print("Email:",Email.lower())
+    print("Caracteres en nombre:",len(Nombre))
+    print("Iniciales:", f"{Nombre[0].upper()}{Nombre[Nombre.find(" ")+1].upper()}",)
+    print("Usuario:", f"{(Nombre[Nombre.find(" ")+1:]).lower()}.{(Nombre[0:Nombre.find(" ")]).lower()}")
+    print("Email valido:", "@" in Email)
+    print("Dominio:", Email.lower()[Email.find("@")+1:])
+    print("Nombre para archivo:", Nombre.replace(" ","_").title())
+    print("Cantidad de a:",Nombre.lower().count("a"))
+    print("Codigo secreto:",Nombre.upper()[::-1])
+    print("Nota 1:",Notas[0])
+    print("Nota 2:",Notas[1])
+    print("Nota 3:",Notas[2])
+    print("Suma:",int(Notas[0])+int(Notas[1])+int(Notas[2]))
+    print("Promedio:",(int(Notas[0])+int(Notas[1])+int(Notas[2]))/3)
+    print("Promedio entero:", int((int(Notas[0])+int(Notas[1])+int(Notas[2]))/3))
+    print("="*24)
+   
+   
     pass
