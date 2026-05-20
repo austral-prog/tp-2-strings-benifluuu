@@ -1,36 +1,14 @@
 def check_vowels():
-    """Lee un nombre y verifica si contiene cada una de las vocales (a, e, i, o, u),
-    sin distinguir mayúsculas de minúsculas.
-    """
-   
-    name = input().lower()
-
-   
-    print("Contiene a:","a" in name)
-    print("Contiene e:","e" in name)
-    print("Contiene i:","i" in name)
-    print("Contiene o:","o" in name)
-    print("Contiene u:","u" in name)
-
-
-
+    # 1. Leer el nombre desde la entrada estándar
+    nombre = input()
     
+    # 2. Convertir a minúsculas para asegurar que la búsqueda no falle con mayúsculas
+    nombre_min = nombre.lower()
     
-    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    pass
-
-
-
-
-
-#check_vowels()
+    # 3. Verificar la existencia de cada vocal usando el operador 'in'
+    # e imprimir los resultados usando f-strings
+    print(f"Contiene a: {'a' in nombre_min}")
+    print(f"Contiene e: {'e' in nombre_min}")
+    print(f"Contiene i: {'i' in nombre_min}")
+    print(f"Contiene o: {'o' in nombre_min}")
+    print(f"Contiene u: {'u' in nombre_min}")

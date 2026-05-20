@@ -1,17 +1,23 @@
 def string_info():
-    """Dada la palabra 'Programacion', imprime su longitud, primera y última letra,
-    la palabra repetida 3 veces y decorada con '***'.
+    """Dada la variable palabra = "Programacion", imprime información detallada
+    sobre la cadena utilizando f-strings y operaciones de strings.
     """
     palabra = "Programacion"
-
-
-    palabra = "Programacion"
-    print("Palabra:", palabra)
-    print("Longitud:",len(palabra))
-    print("Primera letra:",palabra[0])
-    print("Ultima letra:",palabra[11])
-    print("Repetida:",palabra*3)
-    print("Decorada:",f"***{palabra}***")
-
-
-#string_info()
+    
+    # 1. Imprimir la palabra original
+    print(f"Palabra: {palabra}")
+    
+    # 2. Imprimir su longitud usando len()
+    print(f"Longitud: {len(palabra)}")
+    
+    # 3. Imprimir la primera letra usando el índice 0
+    print(f"Primera letra: {palabra[0]}")
+    
+    # 4. Imprimir la última letra usando el índice -1
+    print(f"Ultima letra: {palabra[-1]}")
+    
+    # 5. Imprimir la palabra repetida 3 veces con el operador *
+    print(f"Repetida: {palabra * 3}")
+    
+    # 6. Imprimir la palabra decorada sumando los asteriscos a los lados
+    print(f"Decorada: ***{palabra}***")
